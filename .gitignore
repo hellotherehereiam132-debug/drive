@@ -18,3 +18,7 @@ out/
 .vscode/
 .idea/
 .vs/
+
+# OS files
+.DS_Store
+Thumbs.db
