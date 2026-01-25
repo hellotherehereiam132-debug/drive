@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Docs Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="auth/script.js"></script>
+</head>
+
+<body>
+  <div class="app">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <h1 class="title" contenteditable="true">Untitled Document</h1>
+        <p class="subtitle">Last edit: Just now</p>
+      </div>
+      <div class="header-right">
+        <button class="btn-share">Share</button>
+      </div>
+    </header>
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+      <div class="toolbar-group">
+        <select class="font-selector" title="Font">
+          <option>Arial</option>
+          <option>Times New Roman</option>
+          <option>Courier New</option>
+          <option>Georgia</option>
+          <option>Verdana</option>
+        </select>
+
+        <select class="size-selector" title="Font Size">
+          <option value="12">12</option>
+          <option value="14" selected>14</option>
+          <option value="16">16</option>
+          <option value="18">18</option>
+          <option value="20">20</option>
+          <option value="24">24</option>
+        </select>
+      </div>
+
+      <div class="toolbar-group">
+        <button id="btn-bold" class="toolbar-btn" title="Bold (Ctrl+B)">
+          <strong>B</strong>
+        </button>
+        <button id="btn-italic" class="toolbar-btn" title="Italic (Ctrl+I)">
+          <em>I</em>
+        </button>
+        <button id="btn-underline" class="toolbar-btn" title="Underline (Ctrl+U)">
+          <u>U</u>
+        </button>
+      </div>
+
+      <div class="toolbar-group">
+        <button id="btn-text-color" class="toolbar-btn" title="Text Color">
+          A<span style="color: red;">▼</span>
+        </button>
+        <button id="btn-highlight" class="toolbar-btn" title="Highlight">
+          🖍️
+        </button>
+      </div>
+
+      <div class="toolbar-group">
+        <button id="btn-align-left" class="toolbar-btn" title="Align Left">
+          ⬅️
+        </button>
+        <button id="btn-align-center" class="toolbar-btn" title="Align Center">
+          ⬇️
+        </button>
+        <button id="btn-align-right" class="toolbar-btn" title="Align Right">
+          ➡️
+        </button>
+        <button id="btn-align-justify" class="toolbar-btn" title="Justify">
+          ≡
+        </button>
+      </div>
+
+      <div class="toolbar-group">
+        <button id="btn-list" class="toolbar-btn" title="Bullet List">
+          •
+        </button>
+        <button id="btn-numbered-list" class="toolbar-btn" title="Numbered List">
+          1.
+        </button>
+      </div>
+
+      <div class="toolbar-group">
+        <button id="btn-undo" class="toolbar-btn" title="Undo">
+          ↶
+        </button>
+        <button id="btn-redo" class="toolbar-btn" title="Redo">
+          ↷
+        </button>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="editor-container">
+      <div id="editor" class="editor" contenteditable="true">
+        <p>Start typing...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

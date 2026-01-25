@@ -1,0 +1,31 @@
+{
+  "name": "google-docs-clone",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "dev": "nodemon script.js",
+    "start": "node script.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "author": "Elijah Chaney",
+  "description": "A fully free software Google Docs–style collaborative editor",
+  "keywords": [
+    "free",
+    "GPL",
+    "collaboration",
+    "docs",
+    "realtime"
+  ],
+  "license": "GPL-3.0-only",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "quill": "^2.0.3",
+    "socket.io": "^4.8.3",
+    "y-websocket": "^3.0.0",
+    "yjs": "^13.6.29"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

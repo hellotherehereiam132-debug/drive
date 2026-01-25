@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header */
+.header {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+  flex: 1;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 500;
+  outline: none;
+  cursor: text;
+  padding: 8px 0;
+}
+
+.title:hover {
+  background-color: #f0f0f0;
+}
+
+.title:focus {
+  background-color: #f0f0f0;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.btn-share {
+  background-color: #1f73e6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-share:hover {
+  background-color: #1557b0;
+}
+
+/* Toolbar */
+.toolbar {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 16px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.toolbar-group {
+  display: flex;
+  gap: 4px;
+  border-right: 1px solid #ddd;
+  padding-right: 8px;
+}
+
+.toolbar-group:last-child {
+  border-right: none;
+}
+
+.font-selector,
+.size-selector {
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.font-selector:hover,
+.size-selector:hover {
+  background-color: #f0f0f0;
+}
+
+.toolbar-btn {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+  min-width: 32px;
+}
+
+.toolbar-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.toolbar-btn.active {
+  background-color: #1f73e6;
+  color: white;
+  border-color: #1f73e6;
+}
+
+/* Editor Container */
+.editor-container {
+  flex: 1;
+  overflow-y: auto;
+  background-color: white;
+  padding: 40px 0;
+}
+
+.editor {
+  max-width: 816px;
+  margin: 0 auto;
+  padding: 0 40px;
+  font-size: 14px;
+  line-height: 1.6;
+  outline: none;
+  min-height: 100%;
+}
+
+.editor p {
+  margin: 16px 0;
+}
+
+.editor ul,
+.editor ol {
+  margin: 16px 0 16px 40px;
+}
+
+.editor li {
+  margin: 8px 0;
+}
+
+/* Scrollbar styling */
+.editor-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.editor-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.editor-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 6px;
+}
+
+.editor-container::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .header-right {
+    align-self: flex-end;
+  }
+
+  .toolbar {
+    gap: 4px;
+  }
+
+  .toolbar-group {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .editor {
+    padding: 0 20px;
+    max-width: 100%;
+  }
+
+  .editor-container {
+    padding: 20px 0;
+  }
+}
