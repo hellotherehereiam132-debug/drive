@@ -13,3 +13,8 @@ logs/
 dist/
 build/
 out/
+
+# editor settings
+.vscode/
+.idea/
+.vs/
